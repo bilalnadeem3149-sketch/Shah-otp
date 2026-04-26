@@ -11,8 +11,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Get credentials from environment variables (for Heroku)
-BOT_TOKEN = os.getenv("8699579904:AAHDf2JMuWomgwpVyvx5ulkaus3qSVwZw9A")
-GROUP_ID = int(os.getenv("-1003975483115"))
+BOT_TOKEN = os.getenv("BOT_TOKEN", "8699579904:AAHDf2JMuWomgwpVyvx5ulkaus3qSVwZw9A")
+raw_group_id = os.getenv("GROUP_ID", "-1003975483115")
 
 # Internal API URL (hardcoded - not exposed to users)
 API_URL = "http://51.75.118.75:20267/api/np2?type=sms"
