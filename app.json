@@ -1,0 +1,36 @@
+{
+  "name": "OTP Telegram Bot",
+  "description": "Real-time OTP notifications to Telegram group",
+  "keywords": ["telegram", "bot", "otp", "notifications"],
+  "repository": "https://github.com/yourusername/otplog-bot",
+  "homepage": "https://t.me/kami_Broken5",
+  "author": "Kami Broken",
+  "env": {
+    "TELEGRAM_BOT_TOKEN": {
+      "description": "Your Telegram Bot Token from @BotFather",
+      "value": "",
+      "required": true
+    },
+    "GROUP_ID": {
+      "description": "Telegram Group/Channel ID where OTP will be sent (e.g., -1003284083068)",
+      "value": "",
+      "required": true
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  },
+  "addons": [],
+  "scripts": {
+    "postdeploy": "echo 'Bot deployed successfully! Check logs with: heroku logs --tail'"
+  },
+  "success_url": "https://t.me/kami_Broken5"
+}
