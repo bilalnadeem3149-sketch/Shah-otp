@@ -154,7 +154,7 @@ def format_message(record):
 <blockquote>📩 Full-Message:</blockquote>
 <pre>{msg}</pre>
 
-Powered By Bilal KING 
+Powered By LEADER SHAH 
 """
 
 
@@ -165,16 +165,16 @@ async def send_otp_message(record):
 
         btn1 = InlineKeyboardButton(
             text="📢 Channel", 
-            url="https://t.me/bilal_982"
+            url="https://t.me/leaderotpgroup"
         )
         btn2 = InlineKeyboardButton(
             text="🔢 Numbers", 
-            url="https://t.me/ajjeidnxoeodjnd"
+            url="https://t.me/newbackupchanel"
         )
         
         btn3 = InlineKeyboardButton(
             text="👨‍💻 Developer", 
-            url="https://t.me/bilal_babar"
+            url="https://t.me/SHAHLEADER12"
         )
         btn4 = InlineKeyboardButton(
             text="🟢 WhatsApp", 
