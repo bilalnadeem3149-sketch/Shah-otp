@@ -139,7 +139,7 @@ async def send_otp_message(record):
             [InlineKeyboardButton("📢 Channel", url="https://t.me/leaderotpgroup"),
              InlineKeyboardButton("🔢 Numbers", url="https://t.me/newbackupchanel")],
             [InlineKeyboardButton("👨‍💻 Developer", url="https://t.me/SHAHLEADER12"),
-             InlineKeyboardButton("🟢 WhatsApp", url="https://whatsapp.com/channel/0029Vaj3Xnu17EmtDxTNnQ0G")]
+             InlineKeyboardButton("🟢 WhatsApp", url="https://whatsapp.com/channel/0029VbC0Gcs0G0XZqgIYFL01")]
         ])
         await bot.send_message(chat_id=GROUP_ID, text=message, parse_mode="HTML", reply_markup=keyboard)
         print(f"[{datetime.now()}] Sent OTP from {record['number']}")
